@@ -3,83 +3,110 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SHIV DIGITAL STUDIO, BALI</title>
+<title>Shiv Digital Studio</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
-font-family:'Poppins',sans-serif;
-background:#0f172a;
-color:white;
+background:#000;
+color:#fff;
 overflow-x:hidden;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,0.8);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:800;
+color:#fff;
+}
+
+.logo span{
+color:#d4af37;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+margin-left:25px;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#d4af37;
 }
 
 .hero{
 height:100vh;
 background:
-linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.65)),
-url("https://images.unsplash.com/photo-1511285560929-80b456fea0bc");
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.75)),
+url('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1600');
 background-size:cover;
 background-position:center;
 display:flex;
-align-items:center;
 justify-content:center;
+align-items:center;
 text-align:center;
 padding:20px;
 }
 
-.hero-content{
-max-width:900px;
+.hero-content h1{
+font-size:65px;
+color:#d4af37;
+margin-bottom:15px;
 }
 
-.hero h1{
-font-family:'Cinzel',serif;
-font-size:75px;
-color:#FFD700;
-}
-
-.hero h2{
-font-size:28px;
-font-weight:300;
-margin-top:10px;
-}
-
-.hero p{
-margin-top:20px;
+.hero-content p{
 font-size:20px;
-color:#ddd;
+margin-bottom:30px;
 }
 
 .btn{
 display:inline-block;
-margin-top:30px;
 padding:15px 35px;
-background:#FFD700;
-color:black;
+background:#d4af37;
+color:#000;
 text-decoration:none;
 font-weight:700;
-border-radius:40px;
-margin-right:10px;
+border-radius:50px;
+transition:.3s;
 }
 
-.section{
+.btn:hover{
+transform:translateY(-4px);
+}
+
+section{
 padding:90px 8%;
 }
 
 .title{
 text-align:center;
-font-size:45px;
-color:#FFD700;
+font-size:40px;
+color:#d4af37;
 margin-bottom:50px;
-font-family:'Cinzel',serif;
 }
 
 .services{
@@ -89,231 +116,228 @@ gap:25px;
 }
 
 .card{
-background:rgba(255,255,255,0.08);
-backdrop-filter:blur(10px);
-padding:30px;
-border-radius:20px;
+background:#111;
+padding:35px;
+border:1px solid #d4af37;
+border-radius:15px;
 text-align:center;
-border:1px solid rgba(255,215,0,.3);
 transition:.3s;
 }
 
 .card:hover{
-transform:translateY(-10px);
+transform:translateY(-8px);
 }
 
-.icon{
-font-size:45px;
-margin-bottom:15px;
+.card h3{
+color:#d4af37;
+margin-bottom:10px;
 }
 
-.stats{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
+.about{
 text-align:center;
-}
-
-.stat{
-padding:25px;
-background:#111827;
-border-radius:20px;
-}
-
-.stat h3{
-font-size:45px;
-color:#FFD700;
+max-width:900px;
+margin:auto;
+line-height:1.8;
+font-size:18px;
 }
 
 .gallery{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
 }
 
 .gallery img{
 width:100%;
-height:300px;
+height:280px;
 object-fit:cover;
 border-radius:15px;
+border:2px solid #d4af37;
 }
 
 .contact{
 text-align:center;
 }
 
-.contact h3{
-margin:10px 0;
-font-size:26px;
+.contact-box{
+background:#111;
+padding:40px;
+border-radius:15px;
+max-width:700px;
+margin:auto;
+border:1px solid #d4af37;
+}
+
+.contact-box p{
+margin:15px 0;
+font-size:18px;
+}
+
+.socials{
+margin-top:20px;
+}
+
+.socials a{
+display:inline-block;
+margin:10px;
+padding:12px 25px;
+background:#d4af37;
+color:#000;
+text-decoration:none;
+font-weight:700;
+border-radius:40px;
 }
 
 footer{
-padding:25px;
+background:#111;
 text-align:center;
-background:#020617;
-margin-top:40px;
+padding:25px;
+border-top:1px solid #d4af37;
 }
 
 .whatsapp{
 position:fixed;
-right:20px;
 bottom:20px;
+right:20px;
 background:#25D366;
 color:white;
-padding:15px 18px;
-border-radius:50%;
+padding:15px 20px;
+border-radius:50px;
 text-decoration:none;
-font-size:28px;
+font-weight:700;
+z-index:999;
 }
 
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+nav{
+margin-top:10px;
+}
+
+nav a{
+margin:0 8px;
+font-size:14px;
+}
+
+.hero-content h1{
+font-size:40px;
+}
+
+.hero-content p{
+font-size:16px;
+}
+
+.title{
+font-size:30px;
+}
+}
 </style>
 </head>
 
 <body>
 
-<section class="hero">
-
-<div class="hero-content">
-
-<h1>SHIV DIGITAL STUDIO</h1>
-
-<h2>BALI</h2>
-
-<p>
-Capturing Emotions • Creating Timeless Memories
-</p>
-
-<a href="https://wa.me/919358915668" class="btn">
-Book Now
-</a>
-
-<a href="https://www.instagram.com/shiv_digital_click" class="btn">
-Instagram
-</a>
-
+<header>
+<div class="logo">
+<span>SHIV</span> DIGITAL STUDIO
 </div>
 
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<div class="hero-content">
+<h1>SHIV DIGITAL STUDIO</h1>
+<p>Wedding Photography • Pre Wedding • Cinematic Video • Drone Shoot</p>
+<a href="#contact" class="btn">Book Now</a>
+</div>
 </section>
 
-<section class="section">
-
+<section id="services">
 <h2 class="title">Our Services</h2>
 
 <div class="services">
 
 <div class="card">
-<div class="icon">📸</div>
-<h3>Photography</h3>
+<h3>Wedding Photography</h3>
+<p>Professional wedding coverage with creative storytelling.</p>
 </div>
 
 <div class="card">
-<div class="icon">🎥</div>
-<h3>Videography</h3>
+<h3>Pre Wedding Shoot</h3>
+<p>Beautiful outdoor and cinematic pre wedding shoots.</p>
 </div>
 
 <div class="card">
-<div class="icon">🚁</div>
+<h3>Cinematic Videography</h3>
+<p>High quality cinematic wedding films and reels.</p>
+</div>
+
+<div class="card">
 <h3>Drone Shoot</h3>
-</div>
-
-<div class="card">
-<div class="icon">🏗️</div>
-<h3>Crane Shoot</h3>
-</div>
-
-<div class="card">
-<div class="icon">💍</div>
-<h3>Candid Wedding</h3>
-</div>
-
-<div class="card">
-<div class="icon">🎬</div>
-<h3>Cinematic Films</h3>
-</div>
-
-<div class="card">
-<div class="icon">👶</div>
-<h3>Baby Shower</h3>
-</div>
-
-<div class="card">
-<div class="icon">🎉</div>
-<h3>Event Coverage</h3>
+<p>Premium aerial coverage with professional drone shots.</p>
 </div>
 
 </div>
-
 </section>
 
-<section class="section">
+<section id="about">
+<h2 class="title">About Us</h2>
 
-<h2 class="title">Our Journey</h2>
-
-<div class="stats">
-
-<div class="stat">
-<h3>500+</h3>
-<p>Happy Clients</p>
+<div class="about">
+Shiv Digital Studio is dedicated to capturing life's most beautiful moments.
+We specialize in wedding photography, pre-wedding shoots, cinematic videography,
+drone coverage and event photography. Our mission is to turn your memories into timeless stories.
 </div>
-
-<div class="stat">
-<h3>1000+</h3>
-<p>Events Covered</p>
-</div>
-
-<div class="stat">
-<h3>10+</h3>
-<p>Years Experience</p>
-</div>
-
-<div class="stat">
-<h3>4K</h3>
-<p>Cinematic Quality</p>
-</div>
-
-</div>
-
 </section>
 
-<section class="section">
-
+<section id="gallery">
 <h2 class="title">Gallery</h2>
 
 <div class="gallery">
-
-<img src="photo1.jpg">
-<img src="photo2.jpg">
-<img src="photo3.jpg">
-
+<img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200">
+<img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=1200">
+<img src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?q=80&w=1200">
+<img src="https://images.unsplash.com/photo-1513278974582-3e1b4a4fa21d?q=80&w=1200">
+<img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&w=1200">
+<img src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?q=80&w=1200">
 </div>
-
 </section>
 
-<section class="section contact">
-
+<section id="contact">
 <h2 class="title">Contact Us</h2>
 
-<h3>📞 9358915668</h3>
-<h3>📞 9772955334</h3>
+<div class="contact-box">
 
-<br>
+<p>📞 9358915668</p>
+<p>📞 9772955334</p>
 
-<a href="https://wa.me/919358915668" class="btn">
-WhatsApp Booking
-</a>
+<p>📧 shivdigitalclick@gmail.com</p>
 
+<p>📸 Instagram: Shiv Digital Click</p>
+
+<div class="socials">
+<a href="https://wa.me/919358915668" target="_blank">WhatsApp</a>
+</div>
+
+</div>
 </section>
 
 <footer>
-
-<h3>SHIV DIGITAL STUDIO, BALI</h3>
-
-<p>Photography • Cinematic Videography • Drone Coverage</p>
-
+© 2026 Shiv Digital Studio | All Rights Reserved
 </footer>
 
-<a href="https://wa.me/919358915668" class="whatsapp">
-💬
+<a class="whatsapp" href="https://wa.me/919358915668" target="_blank">
+WhatsApp
 </a>
 
 </body>
